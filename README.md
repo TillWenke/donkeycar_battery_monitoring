@@ -6,7 +6,7 @@ This works for Donkeys with with a [Robohat MM1](https://robohatmm1-docs.readthe
 
 Make sure you have the library for communication with the current unit installed (`pip install adafruit-circuitpython-ina219`).
 
-Complete the [software setup] (https://docs.donkeycar.com/guide/create_application/) on your car.
+Complete the [software setup](https://docs.donkeycar.com/guide/create_application/) on your car.
 Add the following line to _myconfig.py_: `HAVE_INA = True`
 Now you can add the current unit **ina.py** as another *part* to your car and replace your **manage.py** with the one provided here. Alternatively you can just add the following lines to your **manage.py** which create the INA219 object and cause that the battery information is recorded alongside the other tub data.
 
