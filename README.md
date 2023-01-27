@@ -4,7 +4,7 @@ Enables you to monitor various key properties of your car's battery which are st
 ## Setup
 This works for Donkeys with with a [Robohat MM1](https://robohatmm1-docs.readthedocs.io/en/latest/) and an INA219 current unit.
 
-Make sure you have the [library](https://docs.circuitpython.org/projects/ina219/en/latest/) for communication with the current unit installed (`pip install adafruit-circuitpython-ina219`).
+Make sure you have the [libraries](https://docs.circuitpython.org/projects/ina219/en/latest/) for communication with the current unit installed (`pip install adafruit-circuitpython-ina219 adafruit-circuitpython-register`).
 
 Complete the [software setup](https://docs.donkeycar.com/guide/create_application/) on your car.
 Add the following line to **myconfig.py**: `HAVE_INA = True`
