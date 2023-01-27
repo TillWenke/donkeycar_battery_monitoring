@@ -20,7 +20,7 @@ if cfg.HAVE_INA:
       inputs += ['ina/voltage', 'ina/current', 'ina/power']
       types += ['float', 'float', 'float']
 ```
-(all of this is inspired how a )
+(all of this is inspired by how a IMU (another sensor) is treated for the same purpose in the default [donkeycar code](https://github.com/autorope/donkeycar).)
 
 ## Ideas how to progress
 
