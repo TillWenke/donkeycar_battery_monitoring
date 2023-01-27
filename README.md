@@ -1,4 +1,5 @@
 # Keep an eye on your Donkey's battery
+Enables you to monitor various key properties of your car's battery which are stored with the images, throttle, steering, ... values in *mycar/data/* to include them into your model training.
 
 ## Setup
 This works for Donkeys with with a [Robohat MM1](https://robohatmm1-docs.readthedocs.io/en/latest/) and an INA219 current unit.
@@ -19,6 +20,7 @@ if cfg.HAVE_INA:
       inputs += ['ina/voltage', 'ina/current', 'ina/power']
       types += ['float', 'float', 'float']
 ```
+(all of this is inspired how a )
 
 ## Ideas how to progress
 
