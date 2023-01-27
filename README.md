@@ -28,4 +28,4 @@ if cfg.HAVE_INA:
 - quite reliable battery checker
 - eco friendly driving -> rl
 - as model input to keep driving at consistent speed 
-
+- explain the values & give credits to sources
