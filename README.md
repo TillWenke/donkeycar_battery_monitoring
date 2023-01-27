@@ -24,5 +24,8 @@ if cfg.HAVE_INA:
 
 ## Ideas how to progress
 
-
+- be sure your car can drive
+- quite reliable battery checker
+- eco friendly driving -> rl
+- as model input to keep driving at consistent speed 
 
