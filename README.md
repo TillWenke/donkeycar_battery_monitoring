@@ -29,3 +29,4 @@ if cfg.HAVE_INA:
 - eco friendly driving -> rl
 - as model input to keep driving at consistent speed 
 - explain the values & give credits to sources
+- check registers with "i2cdetect -r -y 1"
