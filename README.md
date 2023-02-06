@@ -28,11 +28,6 @@ if cfg.HAVE_INA:
       types += ['float', 'float', 'float']
 ```
 
-
-
-All of this is inspired by how a IMU (another sensor) is treated for the same purpose in the default [donkeycar code](https://github.com/autorope/donkeycar).
-There was also a implementation present in the [Donkey App](https://play.google.com/store/apps/details?id=com.robocarLtd.RobocarController&hl=en&gl=US&pli=1) which has been [abandoned](https://github.com/robocarstore/donkeycar_controller/issues/10) as MM1 is discontinued by the manufacturer. Still you can investigate the portion of how much your battery is charged (ranging 7V to 8.4V) via `http://donkey-ip:8000/vehicle/status` and an implementation of the retrieval of those values can be found [here](https://github.com/robocarstore/donkeycar-console/blob/dev/dkconsole/vehicle/vehicle_service.py#L702).
-
 ## Ideas how to progress
 
 - Make sure your car can drive
@@ -47,3 +42,10 @@ There was also a implementation present in the [Donkey App](https://play.google.
 - Eco-friendly driving
 
 	...actually our first use-case for this implementation. We were thinking about a machine learning model that takes the energy used into account so that it of course drives safely but as well tries to minimize the energy needed and e.g. drives smoother, slower, more careful. The energy spent could be retrieved via the area under the power curve. In particular we were thinking about a RL-model that gets rewarded for low battery usage. If that is feasable and how to use the provided values best in a model has yet to be investigated.
+	
+## Different approach
+If you are interested in retrieving battery information from/ on the robohat directly you might be interested in this [piece](https://learn.adafruit.com/circuitpython-essentials/circuitpython-analog-in) (the pin for the MM1 is *board.BATTERY*) and communication of [MM1 to RaspberryPi](https://github.com/tillwenke/robohatmm1_to_donkeycar_communication).
+	
+## Resources
+All of this is inspired by how a IMU (another sensor) is treated for the same purpose in the default [donkeycar code](https://github.com/autorope/donkeycar).
+There was also a implementation present in the [Donkey App](https://play.google.com/store/apps/details?id=com.robocarLtd.RobocarController&hl=en&gl=US&pli=1) which has been [abandoned](https://github.com/robocarstore/donkeycar_controller/issues/10) as MM1 is discontinued by the manufacturer. Still you can investigate the portion of how much your battery is charged (ranging 7V to 8.4V) via `http://donkey-ip:8000/vehicle/status` and an implementation of the retrieval of those values can be found [here](https://github.com/robocarstore/donkeycar-console/blob/dev/dkconsole/vehicle/vehicle_service.py#L702).
