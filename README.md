@@ -39,9 +39,9 @@ if cfg.HAVE_INA:
 - Voltmeter
 
 	...without any proper voltmeter at hand you could use the INA. Using a 8.4 V LiPo battery the measurements were quite accurate for me.
-**- Eco-friendly driving
+- **Eco-friendly driving**
 
-	...actually our first use-case for this implementation. We were thinking about a machine learning model that takes the energy used into account so that it of course drives safely but as well tries to minimize the energy needed and e.g. drives smoother, slower, more careful. The energy spent could be retrieved via the area under the power curve. In particular we were thinking about a RL-model that gets rewarded for low battery usage. If that is feasable and how to use the provided values best in a model has yet to be investigated.**
+	**...actually our first use-case for this implementation. We were thinking about a machine learning model that takes the energy used into account so that it of course drives safely but as well tries to minimize the energy needed and e.g. drives smoother, slower, more careful. The energy spent could be retrieved via the area under the power curve. In particular we were thinking about a RL-model that gets rewarded for low battery usage. If that is feasable and how to use the provided values best in a model has yet to be investigated.**
 	
 ## Different approach
 If you are interested in retrieving battery information from/ on the robohat directly you might be interested in this [piece](https://learn.adafruit.com/circuitpython-essentials/circuitpython-analog-in) (the pin for the MM1 is *board.BATTERY*) and communication of [MM1 to Donkey Car](https://github.com/tillwenke/robohatmm1_to_donkeycar_communication).
