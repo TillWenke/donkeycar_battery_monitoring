@@ -269,7 +269,7 @@ def drive(cfg, model_path=None, use_joystick=False, model_type=None,
     #battery
     if cfg.HAVE_INA:
         from donkeycar.parts.ina import INA
-        ina = INA(addr=0x41)
+        ina = INA(addr=INA_ADDR)
         V.add(ina, outputs=['ina/voltage', 'ina/current', 'ina/power'], threaded=False)
     #battery
 
