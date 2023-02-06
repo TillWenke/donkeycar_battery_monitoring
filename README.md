@@ -1,4 +1,4 @@
-# Keep an eye on your Donkey's battery
+# Keep an eye on your Donkey's battery - First step for eco-friendly Donkey Cars
 Enables you to monitor various key properties of your car's battery which are stored with the images, throttle, steering, ... values in *mycar/data/* to include them into your model training.
 This implementation provides voltage, current and power values but can also be extended or reduces just to your needs.
 
