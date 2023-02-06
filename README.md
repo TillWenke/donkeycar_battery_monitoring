@@ -36,11 +36,14 @@ There was also a implementation present in the [Donkey App](https://play.google.
 ## Ideas how to progress
 
 - Make sure your car can drive
-	- at some point there has already been an implementation of automated stopping as soon as the battery level falls below a certain threshold. Something similar can be implemented or even use it so that the car only drives when the battery level is in a certain range. This can be essential for realiable driving. For example when recording training data for self-driving Donkey Car you want to deploy the car in a similar environment including same behaviour of the throttle and thus battery level.
+
+	...at some point there has already been an implementation of automated stopping as soon as the battery level falls below a certain threshold. Something similar can be implemented or even use it so that the car only drives when the battery level is in a certain range. This can be essential for realiable driving. For example when recording training data for self-driving Donkey Car you want to deploy the car in a similar environment including same behaviour of the throttle and thus battery level.
 - Make sure your car can drive at consistent speed
-	- this is a more narrow use-case of the previous one. We saw that some batteries discharge quite fastly when driving for a while. Consequently the same throttle values will be equivalent to different speed depending on the time. With a more dicharged battery it needs more throttle to reach the same speed which makes the car bahave different as we would expect from real cars or at least we would want the speed to be linearly dependent on the throttle. (Without being able to measure the real speed because you might lack the necessary sensors.) Now with knowing the battery voltage you at least have the tools at hand to come up with a function that translates throttle to real speed - but this will most probably be specific to your battery and car used.
+
+	...this is a more narrow use-case of the previous one. We saw that some batteries discharge quite fastly when driving for a while. Consequently the same throttle values will be equivalent to different speed depending on the time. With a more dicharged battery it needs more throttle to reach the same speed which makes the car bahave different as we would expect from real cars or at least we would want the speed to be linearly dependent on the throttle. (Without being able to measure the real speed because you might lack the necessary sensors.) Now with knowing the battery voltage you at least have the tools at hand to come up with a function that translates throttle to real speed - but this will most probably be specific to your battery and car used.
 - Voltmeter
-	- without any proper voltmeter at hand you could use the INA. Using a 8.4 V LiPo battery the measurements were quite accurate for me.
+
+	...without any proper voltmeter at hand you could use the INA. Using a 8.4 V LiPo battery the measurements were quite accurate for me.
 - Eco-friendly driving
 
 	...actually our first use-case for this implementation. We were thinking about a machine learning model that takes the energy used into account so that it of course drives safely but as well tries to minimize the energy needed and e.g. drives smoother, slower, more careful. The energy spent could be retrieved via the area under the power curve. In particular we were thinking about a RL-model that gets rewarded for low battery usage. If that is feasable and how to use the provided values best in a model has yet to be investigated.
